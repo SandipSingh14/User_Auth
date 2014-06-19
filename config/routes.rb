@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
+  get 'sessions/login,'
+
+  get 'sessions/home,'
+
+  get 'sessions/profile,'
+
+  get 'sessions/setting'
+
 root :to => "sessions#login"
-#match ':controller(/:action(/:id))(.:format)'
+get ':controller(/:action(/:id))(.:format)'
 get "signup", :to => "users#new"
 get "login", :to => "sessions#login"
 get "logout", :to => "sessions#logout"
