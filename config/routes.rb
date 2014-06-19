@@ -10,12 +10,12 @@ get ':controller(/:action(/:id))(.:format)'
   get 'sessions/setting'
 
 root :to => "sessions#login"
-match "signup", :to => "users#new"
-match "login", :to => "sessions#login"
-match "logout", :to => "sessions#logout"
-match "home", :to => "sessions#home"
-match "profile", :to => "sessions#profile"
-match "setting", :to => "sessions#setting"
+get "signup", :to => "users#new"
+get "login", :to => "sessions#login"
+get "logout", :to => "sessions#logout"
+get "home", :to => "sessions#home"
+get "profile", :to => "sessions#profile"
+get "setting", :to => "sessions#setting"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
