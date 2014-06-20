@@ -1,20 +1,26 @@
 Rails.application.routes.draw do
-get ':controller(/:action(/:id))(.:format)'
+#match ':controller(/:action(/:id))(.:format)'
 
-  get 'sessions/login,'
+  get 'sessions/login'
 
-  get 'sessions/home,'
+  get 'sessions/home'
 
-  get 'sessions/profile,'
+  get 'sessions/profile'
 
   get 'sessions/setting'
 
 root :to => "sessions#login"
+
 get "signup", :to => "users#new"
+
 get "login", :to => "sessions#login"
+
 get "logout", :to => "sessions#logout"
+
 get "home", :to => "sessions#home"
+
 get "profile", :to => "sessions#profile"
+
 get "setting", :to => "sessions#setting"
 
   # The priority is based upon order of creation: first created -> highest priority.

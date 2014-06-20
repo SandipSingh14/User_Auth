@@ -24,10 +24,10 @@ class SessionsController < ApplicationController
     redirect_to :action => 'login'
   end
 
-  def home,
+  def home
   end
 
-  def profile,
+  def profile
   end
 
   def setting
