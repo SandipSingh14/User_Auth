@@ -13,4 +13,6 @@ class UsersController < ApplicationController
     end
     render "new"
   end
+before_filter :save_login_state, :only => [:new, :create]
+
 end
