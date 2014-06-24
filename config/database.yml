@@ -8,22 +8,16 @@
 #
 # And be sure to use new-style password hashing:
 #   http://dev.mysql.com/doc/refman/5.0/en/old-client.html
-<<<<<<< HEAD
 # Password added after ganerating the file
-=======
 #
->>>>>>> 74c1274bb4dcdbda7c2d5a41d973a3cdcba5676e
 default: &default
   adapter: mysql2
   encoding: utf8
   pool: 5
   username: root
   password: stackexp@123
-<<<<<<< HEAD
   socket: /var/run/mysqld/mysqld.sock
-=======
   host: localhost
->>>>>>> 74c1274bb4dcdbda7c2d5a41d973a3cdcba5676e
 
 development:
   <<: *default
